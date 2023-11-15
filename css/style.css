@@ -24,14 +24,33 @@ html{
 }
 
 .container{
-    width: 1000px;
+    width:100%;
+    max-width: 1000px;
     margin: 0 auto;
 }
+.my-row{
+    display:flex;
+    flex-wrap: wrap;
+}
 
+.spaced{
+    justify-content: space-between;
+}
 /*
     HEADER
 */
-
+header{
+    background-color: var(--second-color);
+    color:white;
+    padding:10px;
+    margin-bottom: 30px;
+}
+header .container .my-row ul li{
+    display: inline-block;
+}
+header .container .my-row nav:last-child div:first-child{
+    display:none;
+}
 
 /*
     MAIN
@@ -52,6 +71,10 @@ html{
 }
 /*desktop*/
 @media screen and (min-width:992px){
-
-
+    header .container .my-row nav:last-child div:first-child{
+        display:block;
+    }
+    header .container .my-row nav:last-child div:last-child{
+        display:none;
+    }
 }
