@@ -31,6 +31,12 @@ html{
     margin: 0 auto;
     padding:0 10px;
 }
+.container-small{
+    width:100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding:0 10px;
+}
 .my-row{
     display:flex;
     flex-wrap: wrap;
@@ -55,6 +61,9 @@ utility
 }
 .bg-indigo{
     background-color: var(--first-color);
+}
+.bg-grey{
+    background-color: var(--fifth-color);
 }  
 .text-indigo{
     color:var(--first-color);
@@ -158,6 +167,15 @@ main section:last-child .container{
 /*
     FOOTER
 */
+footer{
+    padding:30px 0;
+    color:white;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 /*
     MEDIA
