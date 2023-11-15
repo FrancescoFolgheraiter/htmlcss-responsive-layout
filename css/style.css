@@ -88,7 +88,14 @@ main section .my-row .my-col:first-child .cont-img{
 
 /*tablet*/
 @media screen and (min-width:768px){
-
+    .my-col-33{
+        width:calc((100% / 3) - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    main section:first-child .my-row .my-col:first-child{
+        width:calc(((100% / 3) * 2) - 20px);
+    }
 }
 /*desktop*/
 @media screen and (min-width:992px){
