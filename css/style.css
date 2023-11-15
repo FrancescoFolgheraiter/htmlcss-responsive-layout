@@ -1,3 +1,10 @@
+:root{
+    --first-color:#9792e4;
+    --second-color:#0084fd;
+    --third-color:#b5ddff;
+    --fourth-color:#fdc15f;
+    --fifth-color:#333333;
+}
 /*
     RESET
 */
@@ -22,6 +29,11 @@ html{
 }
 
 /*
+    HEADER
+*/
+
+
+/*
     MAIN
 */
 
@@ -33,3 +45,13 @@ html{
 /*
     MEDIA
 */
+
+/*tablet*/
+@media screen and (min-width:768px){
+
+}
+/*desktop*/
+@media screen and (min-width:992px){
+
+
+}
