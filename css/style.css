@@ -14,7 +14,9 @@
     padding:0;
     box-sizing: border-box;
 }
-
+img{
+    width:100%;
+}
 /*
     GENERAL
 */
@@ -27,15 +29,27 @@ html{
     width:100%;
     max-width: 1000px;
     margin: 0 auto;
+    padding:0 10px;
 }
 .my-row{
     display:flex;
     flex-wrap: wrap;
 }
+.my-col{
+    width:100%;
+    margin-bottom: 10px;
+}
 
 .spaced{
     justify-content: space-between;
 }
+/*
+utility
+*/
+.bg-light-blue{
+    background-color: var(--third-color);
+}    
+    
 /*
     HEADER
 */
@@ -55,7 +69,14 @@ header .container .my-row nav:last-child div:first-child{
 /*
     MAIN
 */
-
+/*first section*/
+main section:first-child .my-row .my-col{
+    border-radius: 20px;
+    padding:20px 20px;
+}
+main section .my-row .my-col:first-child .cont-img{
+    width:250px;
+}
 
 /*
     FOOTER
@@ -73,6 +94,12 @@ header .container .my-row nav:last-child div:first-child{
 @media screen and (min-width:992px){
     header .container .my-row nav:last-child div:first-child{
         display:block;
+    }
+    header .container .my-row nav:last-child div:first-child ul li a{
+        text-decoration: none;
+        color:white;
+        padding:20px 10px;
+        
     }
     header .container .my-row nav:last-child div:last-child{
         display:none;
