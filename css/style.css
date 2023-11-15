@@ -43,11 +43,17 @@ html{
 .spaced{
     justify-content: space-between;
 }
+section{
+    padding-top:50px;
+}
 /*
 utility
 */
 .bg-light-blue{
     background-color: var(--third-color);
+}
+.bg-indigo{
+    background-color: var(--first-color);
 }    
     
 /*
@@ -57,7 +63,6 @@ header{
     background-color: var(--second-color);
     color:white;
     padding:10px;
-    margin-bottom: 30px;
 }
 header .container .my-row ul li{
     display: inline-block;
@@ -71,11 +76,24 @@ header .container .my-row nav:last-child div:first-child{
 */
 /*first section*/
 main section:first-child .my-row .my-col{
+    text-align: center;
     border-radius: 20px;
     padding:20px 20px;
 }
-main section .my-row .my-col:first-child .cont-img{
+main section:first-child .my-row .my-col:first-child .cont-img{
     width:250px;
+}
+
+main section:first-child .my-row .my-col h3,
+main section:first-child .my-row .my-col i{
+    color:var(--second-color);
+}
+
+/*second section*/
+
+main section:nth-child(2) .planning-container div:last-child{
+    background-color: white;
+    border-radius: 20px;
 }
 
 /*
@@ -111,4 +129,13 @@ main section .my-row .my-col:first-child .cont-img{
     header .container .my-row nav:last-child div:last-child{
         display:none;
     }
+    .planning-container{
+        padding:0 60px;
+        display:flex;
+        align-items:flex-end;
+    }
+    .planning-container>*{
+        width:50%;
+    }
+
 }
