@@ -105,6 +105,7 @@ main section:nth-child(2) .planning-container div:last-child{
     margin-bottom: 10px;
     border-radius: 25px;
     padding:10px;
+    color:white;
 }
 .testimonial-cont-img{
     width:200px;
@@ -117,7 +118,13 @@ main section:nth-child(2) .planning-container div:last-child{
     object-fit: cover;
     border-radius: 50%;
 }
-
+/*fourth section*/
+main section:nth-child(4) .my-row .my-col{
+    background-color: white;
+    border-radius: 25px;
+    padding:10px;
+    margin-bottom: 10px;
+}
 
 /*
     FOOTER
@@ -139,9 +146,16 @@ main section:nth-child(2) .planning-container div:last-child{
     }
     main section:nth-child(3) .testimonials-container{
         display:flex;
+        align-items: center;
     }
+
     main section:nth-child(3) .testimonials-container>*:first-child{
         min-width: 200px;
+        margin-right: 20px;
+    }
+    main section:nth-child(4) .my-col-tablet-50{
+        width:calc(50% - 20px);
+        margin:0 10px;
     }
 }
 /*desktop*/
