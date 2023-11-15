@@ -58,6 +58,9 @@ utility
 }  
 .text-indigo{
     color:var(--first-color);
+}
+.text-orange{
+    color:var(--fourth-color);
 }  
     
 /*
@@ -138,7 +141,6 @@ main section:nth-child(5) .cont-img>*:first-child{
 main section:nth-child(5) .cont-img{
     width:200px;
     height:200px;
-    margin:0 auto;
 }
 main section:nth-child(5) .cont-img>*:last-child{
     width:100%;
@@ -147,8 +149,12 @@ main section:nth-child(5) .cont-img>*:last-child{
     border-radius: 50%;
 
 }
-
-
+/*sixth section*/
+main section:last-child .container{
+    padding:0 50px;
+    text-align: center;
+    color:white;
+}
 /*
     FOOTER
 */
