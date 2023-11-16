@@ -23,10 +23,11 @@ img{
 
 html{
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
+
 .container{
-    width:100%;
     max-width: 1000px;
     margin: 0 auto;
     padding:0 10px;
@@ -40,6 +41,9 @@ html{
 .my-row{
     display:flex;
     flex-wrap: wrap;
+}
+.vertical-center{
+    align-items: center;
 }
 .my-col{
     width:100%;
@@ -79,6 +83,8 @@ header{
     background-color: var(--second-color);
     color:white;
     padding:10px;
+    position: sticky;
+    z-index: 1;
 }
 header .container .my-row ul li{
     display: inline-block;
@@ -103,6 +109,10 @@ main section:first-child .my-row .my-col:first-child .cont-img{
 main section:first-child .my-row .my-col h3,
 main section:first-child .my-row .my-col i{
     color:var(--second-color);
+    margin-bottom: 10px;
+}
+main section:first-child .my-row .my-col:first-child>*:first-child{
+    text-align: left;
 }
 
 /*second section*/
@@ -221,7 +231,7 @@ footer p {
     header .container .my-row nav:last-child div:first-child ul li a{
         text-decoration: none;
         color:white;
-        padding:20px 10px;
+        padding:20px 20px;
         
     }
     header .container .my-row nav:last-child div:last-child{
@@ -234,7 +244,7 @@ footer p {
         width:60%;
     }
     main section:first-child .my-row .my-col:first-child>*:last-child{
-        width:30%;
+        max-width: 350px;
         align-self: flex-end;
     }
 
